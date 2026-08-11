@@ -1,10 +1,11 @@
 import React from 'react'
+import Home from './Home/page'
 
 const page = () => {
   return (
     <div>
       <div>
-        i am a home page 
+        <Home/>
       </div>
     </div>
   )

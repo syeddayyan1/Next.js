@@ -24,3 +24,259 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.header {
+  width: 100%;
+  background: linear-gradient(135deg, #111827, #1e3a5f);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  max-width: 1200px;
+  height: 75px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 35px;
+}
+
+.navLinks a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navLinks a:hover {
+  color: #38bdf8;
+}
+
+.navButton {
+  padding: 11px 20px;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.navButton:hover {
+  background: #7dd3fc;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   COMMON
+========================= */
+
+.home,
+.about,
+.contact {
+  min-height: calc(100vh - 75px);
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+
+  background: linear-gradient(135deg, #eef6ff, #ffffff);
+}
+
+.heroContent {
+  max-width: 750px;
+}
+
+.tagline {
+  color: #0284c7;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero h1,
+.about h1,
+.contact h1 {
+  font-size: 58px;
+  line-height: 1.1;
+  color: #0f172a;
+  margin-bottom: 25px;
+}
+
+.hero h1 span,
+.about h1 span,
+.contact h1 span {
+  color: #0284c7;
+}
+
+.heroText,
+.aboutContent > p,
+.contactContent > p {
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.heroButton {
+  margin-top: 30px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #0284c7;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.aboutSection {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+
+.aboutContent {
+  max-width: 900px;
+  text-align: center;
+}
+
+.aboutCards {
+  display: flex;
+  gap: 20px;
+  margin-top: 45px;
+}
+
+.aboutCard {
+  flex: 1;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.aboutCard h3 {
+  color: #0284c7;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.aboutCard p {
+  color: #64748b;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contactSection {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #eef6ff, #ffffff);
+}
+
+.contactContent {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.contactForm textarea {
+  height: 140px;
+  resize: none;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #0284c7;
+}
+
+.contactForm button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #0284c7;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+  .navLinks {
+    gap: 15px;
+  }
+
+  .hero h1,
+  .about h1,
+  .contact h1 {
+    font-size: 40px;
+  }
+
+  .aboutCards {
+    flex-direction: column;
+  }
+
+  .navButton {
+    display: none;
+  }
+}
