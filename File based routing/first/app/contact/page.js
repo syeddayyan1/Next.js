@@ -1,6 +1,16 @@
+import Script from "next/script";
 export default function Contact() {
   return (
     <main className="contact">
+      
+      <div>
+        <Script id="alert-script">
+        {`
+          alert("Hello from Next.js!");
+        `}
+      </Script>
+      </div>
+
       <section className="contactSection">
         <div className="contactContent">
           <p className="tagline">GET IN TOUCH</p>

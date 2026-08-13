@@ -280,3 +280,45 @@ body {
     display: none;
   }
 }
+
+
+.image-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f8;
+  padding: 30px;
+}
+
+.image-card {
+  width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-8px);
+}
+
+.cs-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.image-card h2 {
+  margin: 18px 0 8px;
+  font-size: 28px;
+  color: black;
+}
+
+.image-card p {
+  color: #666;
+  font-size: 16px;
+}
